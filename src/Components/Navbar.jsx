@@ -24,12 +24,12 @@ const ResponsiveAppBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Button sx={{ my: 2, color: "white", display: "block" }}>
-              <Link style={{ color: "white" }} to="/">
+              <Link style={{ color: "white", textDecoration:"none" }} to="/">
                 Home
               </Link>
             </Button>
             <Button sx={{ my: 2, color: "white", display: "block" }}>
-              <Link style={{ color: "white" }} to="/favourites">
+              <Link style={{ color: "white", textDecoration:"none" }} to="/favourites">
                 Favourites
               </Link>
             </Button>

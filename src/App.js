@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import "./app.css"
+
 import Banner from "./Components/Banner";
 import Error from "./Components/Error";
 import Favourites from "./Components/Favourites";
