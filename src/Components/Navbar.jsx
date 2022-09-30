@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 
 const ResponsiveAppBar = () => {
   return (
-    <AppBar position="static" sx={{ background: "purple" }}>
-      <Container maxWidth="xl">
+    <AppBar position="static" sx={{ background: "#000051" }}>
+      <Container>
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -22,14 +22,17 @@ const ResponsiveAppBar = () => {
           >
             Movie Mania
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: "flex" }}>
             <Button sx={{ my: 2, color: "white", display: "block" }}>
-              <Link style={{ color: "white", textDecoration:"none" }} to="/">
+              <Link style={{ color: "white", textDecoration: "none" }} to="/">
                 Home
               </Link>
             </Button>
             <Button sx={{ my: 2, color: "white", display: "block" }}>
-              <Link style={{ color: "white", textDecoration:"none" }} to="/favourites">
+              <Link
+                style={{ color: "white", textDecoration: "none" }}
+                to="/favourites"
+              >
                 Favourites
               </Link>
             </Button>
