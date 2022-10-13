@@ -37,11 +37,10 @@ export default function Home() {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Pagination
-          sx={{ marginBottom: "1rem" }}
+          sx={{ marginBottom: "1rem", background:"white", padding:"2px", borderRadius:"5px" }}
           color="primary"
           onChange={(e) => setPage(e.target.textContent)}
           count={50}
-          variant="outlined"
           shape="rounded"
         />
       </div>

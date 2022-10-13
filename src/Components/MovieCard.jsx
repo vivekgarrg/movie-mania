@@ -1,9 +1,6 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea } from "@mui/material";
 import Rating from "@mui/material/Rating";
 
 export default function MovieCard({ val }) {
@@ -31,9 +28,11 @@ export default function MovieCard({ val }) {
           {val.title}
         </Typography>
         <Rating
+          sx={{background:"rgba(255,255,255,0.1)", width:"fit-content"}}
           className="card-rating"
           readOnly
-          value={parseInt(val.vote_average / 2)}
+          value={parseFloat(val.vote_average / 2)}
+          precision={0.5}
         />
         <Typography className="card-desc" variant="body">
           {val.overview}
